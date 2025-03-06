@@ -1,15 +1,16 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const axios = require("axios");
-require("dotenv").config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5050;
 
 app.use(express.json());
 app.use(cors());
 
 const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
+console.log("API Key:", process.env.OPENWEATHER_API_KEY);
 
 // Route to Fetch Weather Data
 app.get("/weather", async (req, res) => {
@@ -26,8 +27,8 @@ app.get("/weather", async (req, res) => {
         res.json(response.data);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch weather data" });
-    }
-});
+
+    });
 
 // Start the server
 app.listen(PORT, () => {
