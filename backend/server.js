@@ -1,3 +1,5 @@
+// Setup and Inputs
+
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
@@ -9,10 +11,11 @@ const PORT = process.env.PORT || 5050;
 app.use(express.json());
 app.use(cors());
 
+// Import OpenWeather API key for real-time weather tracking
 const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
 console.log("API Key:", process.env.OPENWEATHER_API_KEY);       // Debugging - API key works now
 
-// Route to Fetch Weather Data
+// Route to fetch weather data
 app.get("/weather", async (req, res) => {
     try {
         const { lat, lon } = req.query; // Get latitude & longitude from request
@@ -30,7 +33,7 @@ app.get("/weather", async (req, res) => {
     }
 });
 
-// Start the server
+// Start the server on port 5050
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
