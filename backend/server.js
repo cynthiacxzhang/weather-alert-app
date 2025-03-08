@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 const OPENWEATHER_API_KEY = process.env.OPENWEATHER_API_KEY;
-console.log("API Key:", process.env.OPENWEATHER_API_KEY);
+console.log("API Key:", process.env.OPENWEATHER_API_KEY);       // Debugging - API key works now
 
 // Route to Fetch Weather Data
 app.get("/weather", async (req, res) => {
