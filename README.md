@@ -1,6 +1,6 @@
 **Smart Weather Alert App**
 
-Description: TBD
+Description: **insert description once completed**
 
 Tech Stack:
 - Frontend: React.js (for UI/UX, real-time map, and alerts)
