@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 // Create weatherwidget class
 const WeatherWidget = () => {
     const [weather, setWeather] = useState(null);   // State to store weather data from OpenWeather API
-    const [alert, setAlert] = useState(null);
-    const [error, setError] = useState(null);
+    const [alert, setAlert] = useState(null);       // State to store alert messages (e.g., extreme weather)
+    const [error, setError] = useState(null);       // State to store any error messages (e.g., location access denied)
 };
 
