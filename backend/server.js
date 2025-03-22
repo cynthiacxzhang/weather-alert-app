@@ -29,7 +29,7 @@ app.get("/weather", async (req, res) => {
 
         res.json(response.data);
     } catch (error) {
-        res.status(500).json({ error: "Failed to fetch weather data" });
+        res.status(500).json({ error: "Failed to fetch weather data from OpenWeather" });
     }
 });
 
