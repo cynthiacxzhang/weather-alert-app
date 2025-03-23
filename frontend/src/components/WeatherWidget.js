@@ -17,6 +17,12 @@ const WeatherWidget = () => {
             // Call backend API and pass latlon into URL
             const response = await fetch(`http://localhost:5050/weather?lat=${lat}&lon=${lon}`);
 
+            // Convert the response to JSON
+            const data = await response.json();
+
+            // Store the received weather data in the state
+            setWeather(data);
+
         } catch (err) {
             // If anything goes wrong (e.g., no response from server), show error
             setError("Could not fetch weather data.");
