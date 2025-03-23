@@ -23,6 +23,9 @@ const WeatherWidget = () => {
             // Store the received weather data in the state
             setWeather(data);
 
+            // === Simple weather alert logic ===
+
+
         } catch (err) {
             // If anything goes wrong (e.g., no response from server), show error
             setError("Could not fetch weather data.");
