@@ -62,6 +62,9 @@ const styles = {
     alert: {
         color: "#d9534f",              // Red text for alerts
         fontWeight: "bold"             // Bold text
+    },
+    error: {
+        color: "#ff0000"               // Bright red for errors
     }
 };
 
