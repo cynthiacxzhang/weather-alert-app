@@ -47,6 +47,10 @@ const WeatherWidget = () => {
 };
 
 
+// Notes?
+
+
+
 // Widget component styling
 const styles = {
     card: {
