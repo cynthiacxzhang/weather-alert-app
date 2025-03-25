@@ -35,7 +35,7 @@ const WeatherWidget = () => {
 
                 // Otherwise, clear any previous alerts
             } else {
-
+                setAlert(null);
             }
 
         } catch (err) {
