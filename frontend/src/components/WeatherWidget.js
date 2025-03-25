@@ -54,7 +54,10 @@ const styles = {
         margin: "20px auto",           // Space outside + center horizontally
         maxWidth: "400px",             // Maximum width
         background: "#f0f4f8",         // Light background color
-
+        borderRadius: "12px",          // Rounded corners
+        boxShadow: "0 4px 8px rgba(0,0,0,0.1)", // Soft shadow
+        fontFamily: "sans-serif",      // Clean font
+        textAlign: "center"            // Centered text
     }
 };
 
