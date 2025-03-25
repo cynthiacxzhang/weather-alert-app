@@ -47,6 +47,16 @@ const WeatherWidget = () => {
 };
 
 
+// Widget component styling
+const styles = {
+    card: {
+        padding: "20px",               // Space inside the card
+        margin: "20px auto",           // Space outside + center horizontally
+        maxWidth: "400px",             // Maximum width
+        background: "#f0f4f8",         // Light background color
+
+    }
+};
 
 
 
