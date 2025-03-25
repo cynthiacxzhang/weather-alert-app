@@ -46,3 +46,10 @@ const WeatherWidget = () => {
     }
 };
 
+
+
+
+
+
+// Last step: explort component so it can be used in App.js
+export default WeatherWidget;
