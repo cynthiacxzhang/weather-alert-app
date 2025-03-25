@@ -25,6 +25,18 @@ const WeatherWidget = () => {
 
             // === Simple weather alert logic ===
 
+            // If the temperature is above 30°C, set a heat alert
+            if (data.main?.temp > 30) {
+                setAlert("⚠️ Warning: It's very hot outside. Stay hydrated!");
+
+                // If the weather condition is Thunderstorm, set a storm alert
+            } else if (data.weather[0]?.main === "Thunderstorm") {
+                setAlert("⚠️ Thunderstorm Alert! Avoid outdoor activities.");
+
+                // Otherwise, clear any previous alerts
+            } else {
+
+            }
 
         } catch (err) {
             // If anything goes wrong (e.g., no response from server), show error
