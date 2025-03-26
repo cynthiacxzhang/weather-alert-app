@@ -71,6 +71,17 @@ const WeatherWidget = () => {
             {/* Show error if there is one */}
             {error && <p style={styles.error}>{error}</p>}
 
+            {/* Show weather details if data is available */}
+            {weather && (
+                <>
+                    <p><strong>Location:</strong> {weather.name}</p>
+                    <p><strong>Temperature:</strong> {weather.main.temp}°C</p>
+                    <p><strong>Condition:</strong> {weather.weather[0].description}</p>
+
+                    {/* Show alert if one is set */}
+                    {alert && <p style={styles.alert}>{alert}</p>}
+                </>
+            )}
 
         </div>
     );
