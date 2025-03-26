@@ -65,7 +65,14 @@ const WeatherWidget = () => {
 
     // What to render (retuning JSX)
     return (
+        <div style={styles.card}> {/* Styled card container */}
+            <h2>🌦️ Weather for Outdoor Athletes</h2>
 
+            {/* Show error if there is one */}
+            {error && <p style={styles.error}>{error}</p>}
+
+
+        </div>
     );
 };
 
