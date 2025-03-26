@@ -64,6 +64,9 @@ const WeatherWidget = () => {
     }, []); // Empty array = run this effect once when component mounts
 
     // What to render (retuning JSX)
+    return (
+
+    );
 };
 
 
