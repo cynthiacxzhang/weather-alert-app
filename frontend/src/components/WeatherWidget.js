@@ -52,7 +52,8 @@ const WeatherWidget = () => {
 
             // If successful, get the coordinates and call fetchWeather()
             (position) => {
-
+                const { latitude, longitude } = position.coords;
+                fetchWeather(latitude, longitude);
             },
 
             // If location access is denied or fails, show an error message
