@@ -44,6 +44,24 @@ const WeatherWidget = () => {
             console.error(err);
         }
     }
+
+    // useEffect runs once when the component loads 
+    useEffect(() => {
+        // Ask for the user's geolocation
+        navigator.geolocation.getCurrentPosition(
+
+            // If successful, get the coordinates and call fetchWeather()
+            (position) => {
+
+            },
+
+            // If location access is denied or fails, show an error message
+            (err) => {
+                setError("Location access denied. Cannot fetch weather.");
+            }
+        );
+    }, []); // Empty array = run this effect only once, when component mounts
+
 };
 
 
