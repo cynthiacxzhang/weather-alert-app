@@ -61,8 +61,9 @@ const WeatherWidget = () => {
                 setError("Location access denied. Cannot fetch weather.");
             }
         );
-    }, []); // Empty array = run this effect only once, when component mounts
+    }, []); // Empty array = run this effect once when component mounts
 
+    // What to render (retuning JSX)
 };
 
 
