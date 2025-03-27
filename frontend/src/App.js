@@ -1,5 +1,4 @@
-import logo from './logo.svg';
-import './App.css';
+// Import React and your custom WeatherWidget component
 
 function App() {
   return (
